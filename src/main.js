@@ -26,6 +26,23 @@ const cadavres = [
   "./exquisiteCadavre/Cadavre6.png",
 ];
 
+let count = 1;
+document.getElementById('radio1').checked = true;
+
+setInterval( function() {
+    nextImage();
+
+}, 3000)
+
+function nextImage() {
+    count++;
+    if(count>2){
+        count=1;
+    }
+
+    document.getElementById('radio'+count).checked = true;
+}
+
 document.querySelector("#app").innerHTML = `
   <main id="container">
     <section id="heading">
@@ -36,39 +53,72 @@ document.querySelector("#app").innerHTML = `
     <section id="projects">
       <div id="project-row">
       Assignment 1
+      Breakthrough
+      
         <div class="three-model">
-          <img src="./exquisiteCadavre/Final Cadavre.png" id="model1" alt "Model 1 Image"/>
+          <div class="slider">
+            <div class="slides
+            <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+
+          <div class="slide first">
+              <a href="./exquisiteCadavre/Final Cadavre.png" target="_blank">
+              <img src="./exquisiteCadavre/Final Cadavre.png" alt="finalcadaver" />
+               </a>
+          </div>
+
+          <div class="slide first">
+            <a href="./exquisiteCadavre/Annimation.gif" target="_blank">    
+            <img src="./exquisiteCadavre/Annimation.gif" alt="annimation" />
+            </a>
+          </div>
+
+          <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          </div>
+      </div>
+        
         </div>
+
         <div id="images-description">
           <div id="images">
             <div id="images">
-               <a href="https://example.com/page1" target="_blank">
+               <a href="./exquisiteCadavre/Cadavre1.png" target="_blank">
               <img src="./exquisiteCadavre/Cadavre1.png" alt="cadavre1" />
                </a>
-              <a href="https://example.com/page2" target="_blank">
+              <a href="./exquisiteCadavre/Cadavre2.png" target="_blank">
                 <img src="./exquisiteCadavre/Cadavre2.png" alt="cadavre2" />
               </a>
-              <a href="https://example.com/page3" target="_blank">
+              <a href="./exquisiteCadavre/Cadavre3.png" target="_blank">
                 <img src="./exquisiteCadavre/Cadavre3.png" alt="cadavre3" />
               </a>
-              <a href="https://example.com/page4" target="_blank">
+              <a href="./exquisiteCadavre/Cadavre4.png" target="_blank">
                 <img src="./exquisiteCadavre/Cadavre4.png" alt="cadavre4" />
               </a>
-              <a href="https://example.com/page4" target="_blank">
+              <a href="./exquisiteCadavre/Cadavre5.png" target="_blank">
                 <img src="./exquisiteCadavre/Cadavre5.png" alt="cadavre5" />
               </a>
-              <a href="https://example.com/page4" target="_blank">
+              <a href="./exquisiteCadavre/Cadavre6.png" target="_blank">
                 <img src="./exquisiteCadavre/Cadavre6.png" alt="cadavre6" />
               </a>
+            </div>
           </div>
-          <h4 id="description">Shattering the glass ceiling beyond repair to provide the space for societal evolutions such as: 
+          <h4 id="description">
+          Shattering the glass ceiling beyond repair to provide the space for societal evolutions such as: 
           Eco architecture and green energy sources to promote sustainability within the city
-          Architectural developments that integrate technology and creativity
-          Inclusivity and accessibility to resources, education, and opportunities for all races, genders and abilities.
-          Technological innovations in various interdisciplinary fields
-          Women and people of colour in positions of leadership, and authority
-        </h4>
-        </div>
+          Architectural developments that integrate technology and creativity;
+          Inclusivity and accessibility to resources, education, and opportunities for all races, genders and abilities;
+          Technological innovations in various interdisciplinary fields;
+          Women and people of colour in positions of leadership, and authority. 
+          </h4>
+          <a href="./exquisiteCadavre/Breakthrough - Manifesto.pdf">
+            Manifesto
+              </a>
+          <a href="./exquisiteCadavre/Breakthrough - Sources.pdf">
+            Sources
+              </a>
+          </div>
       </div>
       
 
