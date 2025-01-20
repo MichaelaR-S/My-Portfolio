@@ -26,22 +26,6 @@ const cadavres = [
   "./exquisiteCadavre/Cadavre6.png",
 ];
 
-let count = 1;
-document.getElementById('radio1').checked = true;
-
-setInterval( function() {
-    nextImage();
-
-}, 3000)
-
-function nextImage() {
-    count++;
-    if(count>2){
-        count=1;
-    }
-
-    document.getElementById('radio'+count).checked = true;
-}
 
 document.querySelector("#app").innerHTML = `
   <main id="container">
@@ -53,38 +37,22 @@ document.querySelector("#app").innerHTML = `
     <section id="projects">
       <div id="project-row">
       Assignment 1
-      Breakthrough
+      Breakthrough: What does the future look like when we break through the glass ceilings?
       
         <div class="three-model">
-          <div class="slider">
-            <div class="slides
-            <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-
-          <div class="slide first">
-              <a href="./exquisiteCadavre/Final Cadavre.png" target="_blank">
-              <img src="./exquisiteCadavre/Final Cadavre.png" alt="finalcadaver" />
-               </a>
-          </div>
-
-          <div class="slide first">
-            <a href="./exquisiteCadavre/Annimation.gif" target="_blank">    
-            <img src="./exquisiteCadavre/Annimation.gif" alt="annimation" />
-            </a>
-          </div>
-
-          <div class="manual-navigation">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          </div>
-      </div>
-        
+        <a href="./exquisiteCadavre/Final Cadavre.png" target="_blank">
+          <img src="./exquisiteCadavre/Final Cadavre.png" id="model1" alt="Model 1 Image"/>
+        </a>
+       
         </div>
 
         <div id="images-description">
           <div id="images">
             <div id="images">
-               <a href="./exquisiteCadavre/Cadavre1.png" target="_blank">
+               <a href="./exquisiteCadavre/Annimation.gif" target="_blank">
+              <img src="./exquisiteCadavre/Annimation.gif" alt="annimation" />
+               </a>
+              <a href="./exquisiteCadavre/Cadavre1.png" target="_blank">
               <img src="./exquisiteCadavre/Cadavre1.png" alt="cadavre1" />
                </a>
               <a href="./exquisiteCadavre/Cadavre2.png" target="_blank">
@@ -104,21 +72,28 @@ document.querySelector("#app").innerHTML = `
               </a>
             </div>
           </div>
-          <h4 id="description">
-          Shattering the glass ceiling beyond repair to provide the space for societal evolutions such as: 
-          Eco architecture and green energy sources to promote sustainability within the city
-          Architectural developments that integrate technology and creativity;
-          Inclusivity and accessibility to resources, education, and opportunities for all races, genders and abilities;
-          Technological innovations in various interdisciplinary fields;
-          Women and people of colour in positions of leadership, and authority. 
-          </h4>
+          <div>
+            <h4 id="description">
+            1. The cracked glass represents the breaking of glass ceilings to provide the space for societal evolutions <br></br>
+            These societal evolutions include <br></br>
+            2. Eco architecture and green energy sources to promote sustainability within the city; <br></br>
+            3. Architectural developments that integrate technology and creativity; <br></br>
+            4. Inclusivity and accessibility to resources, education, and opportunities for all races, genders and abilities; <br></br>
+            5. Technological innovations in various interdisciplinary fields; <br></br>
+            6. Women and people of colour in positions of leadership, and authority. 
+            </h4>
+          </div>
+          <div> 
           <a href="./exquisiteCadavre/Breakthrough - Manifesto.pdf">
-            Manifesto
-              </a>
-          <a href="./exquisiteCadavre/Breakthrough - Sources.pdf">
+              Manifesto
+            </a>
+          </div>
+          <div>
+        <a href="./exquisiteCadavre/Breakthrough - Sources.pdf">
             Sources
               </a>
           </div>
+        </div>
       </div>
       
 
