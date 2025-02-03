@@ -27,6 +27,7 @@ const cadavres = [
 ];
 
 
+
 document.querySelector("#app").innerHTML = `
   <main id="container">
     <section id="heading">
@@ -97,25 +98,55 @@ document.querySelector("#app").innerHTML = `
       </div>
       
 
-      ${/* Model 2 commented out
+      
       <div id="project-row">
-      Model 2
-        <div class="three-model">
-          <div id="model2"></div>
-        </div>
+      Assignment 2
+      Interop
+
         <div id="images-description">
           <div id="images">
-            ${trees
-              .map(
-                (trees, index) =>
-                  `<img src="${trees}" alt="tree${index + 1}" />`
-              )
-              .join("")}
+            <a href="./InterOp/3DPrinted ModelB.jpg" target="_blank">
+              <img src="./InterOp/3DPrinted ModelB.jpg" alt="printB" />
+               </a>
+            <a href="./InterOp/3D Printed ModelA.jpg" target="_blank">
+              <img src="./InterOp/3D Printed ModelA.jpg" alt="printA" />
+               </a>
+            <a href="./InterOp/Paper Model A.jpg" target="_blank">
+              <img src="./InterOp/Paper Model A.jpg" alt="paperA" />
+               </a>  
+            <a href="./InterOp/Paper Model B.jpg" target="_blank">
+              <img src="./InterOp/Paper Model B.jpg" alt="paperB" />
+               </a>     
+            <a href="./InterOp/Photogrammetry Scan.jpg" target="_blank">
+              <img src="./InterOp/Photogrammetry Scan.jpg" alt="printB" />
+               </a>        
           </div>
-          <h4 id="description">A 3D tree model is a geometric representation of a tree, featuring a trunk, branches, and foliage. The trunk is typically cylindrical, with textured bark, while the branches extend outward to support leaves or a canopy. It may include roots or flowers for added detail.</h4>
+          
+          <div>
+            <a href="./InterOp/Written Reflection.pdf">
+              Written Reflection
+            </a>
+          </div>
+          <div>
+            <a href="./InterOp/Comparison Chart.pdf">
+              Comparison Chart
+            </a>
+          </div>
         </div>
       </div>
-      */""}
+      <div class="three-model">
+          <div id="model1"></div>
+        </div>
+          Simple Pavilion
+      <div class="three-model">
+          <div id="model2"></div>
+        </div>
+        Closed Volume
+      <div class="three-model">
+        <div id="model3"></div>
+        </div>
+        Character Model - Eve
+
 
      ${/* Model 3 commented out
       <div id="project-row">
@@ -152,6 +183,6 @@ document.querySelector("#app").innerHTML = `
 
 
 // Create three.js scenes for each
-//createThreeScene("#model1", "/3DModels/project1/cube.obj");
-//*createThreeScene("#model2", "/3DModels/project2/tree.obj");
-//createThreeScene("#model3", "/3DModels/project3/cottage.obj");
+createThreeScene("#model1", "/3DModels/InterOp/SimplePavillion.obj");
+createThreeScene("#model2", "/3DModels/InterOp/Torus.obj");
+createThreeScene("#model3", "/3DModels/InterOp/Eve Jointed Model1.obj");
