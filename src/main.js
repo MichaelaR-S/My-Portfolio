@@ -128,7 +128,7 @@ document.querySelector("#app").innerHTML = `
             </a>
           </div>
           <div>
-            <a href="./InterOp/Comparison Chart.pdf">
+            <a href="./InterOp/Comparison Chart.zip">
               Comparison Chart
             </a>
           </div>
